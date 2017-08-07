@@ -107,7 +107,7 @@ int main(int argc, char** argv) {
 		error = libevdev_uinput_create_from_device(dev,
                                          fd,
                                          &uidev);
-		//libevdev_free(dev);
+		libevdev_free(dev);
 		if(error) {
 			printf("[libevdev:%d]failed to create device", error);
 			goto exit_close;
