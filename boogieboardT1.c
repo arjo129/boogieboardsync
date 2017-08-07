@@ -76,7 +76,7 @@ int main(int argc, char** argv) {
 		struct libevdev *dev;
 		struct libevdev_uinput *uidev;
 		struct input_absinfo _x,_y,_p;
-		_x.maximum = 5000000;
+		_x.maximum = 19780;
 		_x.minimum = 0;
 		_x.fuzz = 0;
 		_x.flat = 0;
@@ -123,7 +123,7 @@ int main(int argc, char** argv) {
 			} 
 			if(error == 0){
 				int x,y,pressure,touch,stylus;
-				x = (int) data[0] | (int) data[1] << 8 | (int) data[2] << 16;
+				x = (int) data[1] | (int) data[2] << 8;
 				y = (int) data[3] | (int) data[4] << 8;
 				pressure = (int) data[5] | (int) data[6] <<8;
 				touch = data[7] & 0x01;
