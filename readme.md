@@ -16,7 +16,7 @@ For ubuntu one can get the dependencies like so:
 
 	sudo apt-get install make gcc pkg-config libusb-1.0-dev libevdev
 
-Thenk all one needs to do is run make in the directory:
+Then all one needs to do is run make in the directory:
 
 	make
 
@@ -30,4 +30,3 @@ In its current form this is a direct port to c of the driver by [jbedo](https://
 * support multiple boogieboards
 * migrate to async API
 * create pretty GUI
-* asyncify
